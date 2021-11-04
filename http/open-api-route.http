@@ -1,37 +1,13 @@
 ###
-# Say hello
-#
-GET ${host}/say/hello
-Content-Type: application/json
-
-###
-# Say bye
-#
-GET ${host}/say/bye
-Content-Type: application/json
-
-###
-# Say bye
-#
-POST ${host}/say/bye
-Content-Type: application/json
-
-###
-# Say dynamice parameter
-#
-GET ${host}/say/bubu
-Content-Type: application/json
-
-###
 # All users
 #
-GET ${host}/users
+GET {{host}}/users
 Content-Type: application/json
 
 ###
 # One user
 #
-GET ${host}/users/123
+GET {{host}}/users/123
 Content-Type: application/json
 
 ###
@@ -39,7 +15,7 @@ Content-Type: application/json
 #
 # => 404 does not respect Accept and doesn't care about param type
 #
-GET ${host}/users/123/departments/david
+GET {{host}}/users/123/departments/david
 Content-Type: application/json
 Accept: application/json
 
@@ -49,7 +25,7 @@ Accept: application/json
 # => if body not sent 400
 # => Validations e.g. NotBlank, NotNull
 #
-PUT ${host}/users
+PUT {{host}}/users
 Content-Type: application/json
 
 {
@@ -60,5 +36,5 @@ Content-Type: application/json
 ###
 # OpenApi => does not work
 #
-GET ${host}/api-doc/openapi.yaml
+GET {{host}}/api-doc/openapi.yaml
 Content-Type: application/json

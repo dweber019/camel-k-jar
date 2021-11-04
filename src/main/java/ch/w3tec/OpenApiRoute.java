@@ -4,8 +4,8 @@
 // camel-k: dependency=camel-jackson
 // camel-k: dependency=camel-openapi-java
 // camel-k: dependency=mvn:org.projectlombok:lombok:1.18.22
-// camel-k: resource=target/camel-k-jar-1.0-SNAPSHOT.jar
-// camel-k: trait=jvm.classpath=/etc/camel/resources/camel-k-jar-1.0-SNAPSHOT.jar
+// camel-k: resource=file:../../../../../target/camel-k-jar-1.0.0.jar
+// camel-k: trait=jvm.classpath=/etc/camel/resources/camel-k-jar-1.0.0.jar
 
 package ch.w3tec;
 

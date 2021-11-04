@@ -36,8 +36,8 @@ where your Camel K route is running.
 You can do this by adding the following (modelines)[https://camel.apache.org/camel-k/1.6.x/cli/modeline.html]
 to your route file (`OpenApiRoute.java`).
 ```
-// camel-k: resource=target/camel-k-jar-1.0-SNAPSHOT.jar
-// camel-k: trait=jvm.classpath=/etc/camel/resources/camel-k-jar-1.0-SNAPSHOT.jar
+// camel-k: resource=file:../../../../../target/camel-k-jar-1.0.0.jar
+// camel-k: trait=jvm.classpath=/etc/camel/resources/camel-k-jar-1.0.0.jar
 ```
 It's important to add the jar file as resource to be compressed.
 
